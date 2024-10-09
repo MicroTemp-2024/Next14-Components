@@ -5,9 +5,10 @@ Next14 Components UX/UI กลุ่ม Components ที่ใช้งาน�
 
 ## ข้อมูลแอพ
 
-- Layout
-- ปรับแต่ง CSS
-- รูปแบบการใช้งาน Component
+- [เอกสารการติดตั้งดั้งเดิม](/next14components/README.md)
+- [ปรับแต่ง Layout](/src/Layout.md)
+- [ปรับแต่ง Globals CSS](/src/GlobalsCSS.md)
+- [รูปแบบการใช้งาน Component](/src/README.md)
 
 ## ข้อมูลเพิ่มเติม
 
@@ -15,3 +16,4 @@ Next14 Components UX/UI กลุ่ม Components ที่ใช้งาน�
 - Tailwind Documents : https://tailwindcss.com/docs/guides/nextjs
 - Next.js + Tailwind CSS : https://nextjs.org/docs/app/building-your-application/styling/tailwind-css
 - เพิ่มเติม : https://nextjs.org/blog
+- Vercel Template : https://vercel.com/templates/next.js
