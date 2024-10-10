@@ -41,3 +41,19 @@ export default function RootLayout({
   );
 }
 ```
+## Grid Example
+
+![grid-simple.png](img/grid-simple.png)
+
+```JavaScript
+<div className="grid grid-cols-4 grid-rows-5 gap-4">
+    <div className="col-span-4">1</div>
+    <div className="col-span-2 row-start-2">2</div>
+    <div className="col-span-2 col-start-3 row-start-2">3</div>
+    <div className="col-span-3 row-start-3">4</div>
+    <div className="col-start-4 row-start-3">5</div>
+    <div className="row-start-4">6</div>
+    <div className="col-span-3 row-start-4">7</div>
+</div>
+```
+**NOTE :** *https://www.tailwindgen.com/*
