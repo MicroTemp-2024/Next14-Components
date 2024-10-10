@@ -31,6 +31,6 @@ Code Default
 }
 ```
 
-Add Library
+## Add Library
 
-- `npm install @heroicons/react`
+- `npm install @heroicons/react` [>>](NavBar.SideBar.md)
