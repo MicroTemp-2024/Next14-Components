@@ -10,6 +10,15 @@ Next14 Components UX/UI กลุ่ม Components ที่ใช้งาน�
 - [ปรับแต่ง Globals CSS](/src/GlobalsCSS.md)
 - [รูปแบบการใช้งาน Component](/src/README.md)
 
+## Tools
+
+- [Tailwind Playgroud](https://play.tailwindcss.com/)
+- [Play Code](https://playcode.io/tailwind) 
+- Icon Generator For Railwind CSS [designtoolshub.com](https://www.designtoolshub.com/tailwind-css/icon-generator)
+- Icon Generator For Railwind CSS [flowbite.com](https://flowbite.com/docs/customize/icons/)
+- Icon Generator For Railwind CSS [tailwindtoolbox.com](https://www.tailwindtoolbox.com/icons)
+- Icon Generator For Railwind CSS [heroicons.com](https://heroicons.com/)
+
 ## ข้อมูลเพิ่มเติม
 
 - เอกสารประจำรุ่น : https://nextjs.org/blog/next-14
