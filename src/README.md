@@ -7,3 +7,5 @@
 ## Components
 
 - NavBar : >> [..](NavBar.md)
+- Card :
+- Backgroud : >> [Card Backgroud](Backgroud.md)
