@@ -53,3 +53,5 @@ function Navbar() {
 
 export default Navbar;
 ~~~
+
+NavBar + SideBar
