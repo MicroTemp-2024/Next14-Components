@@ -30,4 +30,7 @@ Code Default
   }
 }
 ```
+
 Add Library
+
+- `npm install @heroicons/react`
