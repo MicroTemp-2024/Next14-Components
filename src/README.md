@@ -4,7 +4,7 @@
 - [อ่านข้อมูล Globals CSS](GlobalsCSS.md)
 - [โครงสร้าง](Structure.md)
 
-## Add Libart
+## Add Library
 - 
 
 ## Components
