@@ -5,7 +5,8 @@
 - [โครงสร้าง](Structure.md)
 
 ## Add Library
-- 
+
+- `npm install @headlessui/react @heroicons/react`
 
 ## Components
 

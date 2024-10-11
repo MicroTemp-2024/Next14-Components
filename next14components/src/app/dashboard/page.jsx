@@ -1,4 +1,4 @@
-export default function Dashboard() {
+export default function page() {
     return (
         <div className="grid grid-cols-12 h-screen">
             <aside className="bg-gray-800 text-white col-span-2">

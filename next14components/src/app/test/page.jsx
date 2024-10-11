@@ -2,7 +2,7 @@ import Dnavbar from "../components/DnavBar";
 import Dsidebar from "../components/DsideBar";
 import MainFooter from "../components/MainFooter";
 
-export default function Test() {
+export default function page() {
   return (
     <div className="flex flex-col min-h-screen bg-blue">
       <Dnavbar />

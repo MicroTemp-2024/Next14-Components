@@ -1,4 +1,4 @@
-export default function Grid() {
+export default function page() {
     return (
         <div className="flex flex-col items-center justify-center min-h-screen p-10 font-[family-name:var(--font-geist-sans)] text-white bg-blue">
             {/* ปรับขนาดหน้าจอทั้งหมด เป็นแบบ เต็มความสูง กึ่งกลางซ้ายขวา */}

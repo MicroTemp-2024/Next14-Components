@@ -33,4 +33,4 @@ Code Default
 
 ## Add Library
 
-- `npm install @heroicons/react` [>>](NavBar.SideBar.md)
+- `npm install @headlessui/react @heroicons/react` [>>](NavBar.SideBar.md)
