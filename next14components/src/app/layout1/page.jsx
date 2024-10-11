@@ -1,27 +1,36 @@
-import { useState } from 'react';
-import { Disclosure } from '@headlessui/react';
-import { MenuIcon, XIcon } from '@heroicons/react/outline';
+const Layout1 = () => {
 
-export default function page() {
-  return (
-    <div className="bg-gray-dark text-white h-screen grid grid-cols-1 xl:grid-cols-2 gap-2">
+    return (
+        <div className="bg-gray-800 min-h-screen">
+            <div className="flex h-screen">
 
-        <div className="sidebar w-32 h-full bg-green">
-            <p>SideBar</p>
-        </div>
+                <div className="bg-gray-dark w-64">
+                    {/* Sidebar */}
+                    <h1 className="text-white p-4 ">Sidebar</h1>
+                    <ul>
+                        <li className="text-center text-gray py-4">Menu Item 1</li>
+                        <li className="text-center text-gray py-4">Menu Item 2</li>
+                    </ul>
+                </div>
 
-        <div className="w-32 h-24 bg-gray-300 rounded-xl grid grid-rows">
+                <div className="flex-1">
 
-            <div>
-                <p>NavBar</p>
+                    <nav className="bg-blue p-4">
+                        {/* Navbar */}
+                        <h1 className='text-right'>Navbar</h1>
+                    </nav>
+
+                    <main className="p-4">
+                        {/* Content */}
+                        <p>Content</p>
+                    </main>
+
+                </div>
+
             </div>
 
-            <div>
-                <p>Content</p>
-            </div>
-
         </div>
-      
-    </div>
-  );
+    );
 }
+
+export default Layout1

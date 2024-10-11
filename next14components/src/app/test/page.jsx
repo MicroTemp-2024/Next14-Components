@@ -1,3 +1,5 @@
+"use client"
+
 import Dnavbar from "../components/DnavBar";
 import Dsidebar from "../components/DsideBar";
 import MainFooter from "../components/MainFooter";
