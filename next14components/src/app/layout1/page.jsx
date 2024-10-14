@@ -1,12 +1,14 @@
+import React from 'react';
+
 const Layout1 = () => {
 
     return (
         <div className="bg-gray-800 min-h-screen">
-            <div className="flex h-screen">
+            <div className="flex flex-col md:flex-row h-screen">
 
-                <div className="bg-gray-dark w-64">
+                <div className="bg-gray-dark p-4 md:w-64">
                     {/* Sidebar */}
-                    <h1 className="text-white p-4 ">Sidebar</h1>
+                    <h1 className="text-white py-2">Sidebar</h1>
                     <ul>
                         <li className="text-center text-gray py-4">Menu Item 1</li>
                         <li className="text-center text-gray py-4">Menu Item 2</li>
@@ -17,7 +19,7 @@ const Layout1 = () => {
 
                     <nav className="bg-blue p-4">
                         {/* Navbar */}
-                        <h1 className='text-right'>Navbar</h1>
+                        <h1 className='text-right text-white'>Navbar</h1>
                     </nav>
 
                     <main className="p-4">

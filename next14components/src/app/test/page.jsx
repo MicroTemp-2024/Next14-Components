@@ -1,30 +1,54 @@
 "use client"
 
-import Dnavbar from "../components/DnavBar";
-import Dsidebar from "../components/DsideBar";
-import MainFooter from "../components/MainFooter";
+import React, { useState } from 'react';
+import Dsidebar from '../components/DsideBar';
+import Dnavbar from '../components/DnavBar';
 
-export default function page() {
-  return (
-    <div className="flex flex-col min-h-screen bg-blue">
-      <Dnavbar />
-      <div className="flex-grow flex flex-col">
-        <div className="flex flex-row justify-between items-start p-5">
-          {/* ส่วนที่ 2: 2 คอลัมน์ */}
-          <div className="w-1/2">
-            {/* เนื้อหาคอลัมน์ซ้าย */}
-            <Dsidebar />
-          </div>
-          <div className="w-1/2">
-            {/* เนื้อหาคอลัมน์ขวา */}
-            <div>MainPage</div>
-          </div>
+const Test = () => {
+
+    const [isDsidebarOpen, setIsDsidebarOpen] = useState(false);
+    const menuItems = [
+        { id: 1, label: 'Menu Item 1' },
+        { id: 2, label: 'Menu Item 2' },
+    ];
+
+    const toggleSidebar = () => {
+        setIsDsidebarOpen(!isDsidebarOpen);
+    };
+
+    return (
+        <div className="bg-gray-800 min-h-screen">
+            <div className="flex flex-col md:flex-row h-screen">
+
+                <Dsidebar menuItems={menuItems} isDsidebarOpen={isDsidebarOpen} />
+
+                <div className="flex-1">
+
+                    <Dnavbar onToggleSidebar={toggleSidebar} />
+
+                    <main className="p-4">
+                        {/* Content */}
+                        <p>Content</p>
+                    </main>
+
+                </div>
+
+            </div>
+
         </div>
-        <div className="p-5">
-          {/* ส่วนที่ 3: คอลัมน์เดียวเต็มความกว้าง */}
-          <MainFooter />
-        </div>
-      </div>
-    </div>
-  );
+    );
 }
+
+export default Test;
+
+
+{/* 
+<div className="bg-gray-dark p-4 md:w-64">
+// Sidebar 
+<h1 className="text-white py-2">Sidebar</h1>
+<ul>
+    <li className="text-center text-gray py-4">Menu Item 1</li>
+    <li className="text-center text-gray py-4">Menu Item 2</li>
+</ul>
+</div>
+ */}

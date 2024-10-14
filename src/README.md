@@ -7,6 +7,7 @@
 ## Add Library
 
 - `npm install @headlessui/react @heroicons/react`
+- `npm install react-icons --save`
 
 ## Components
 

@@ -1,5 +1,35 @@
 # NavBar
 
+NavBar V.0 (Test Version)
+
+_**NOTE** : `npm install react-icons --save`_
+
+~~~JavaScript
+// '../components/Dnavbar.jsx'
+
+import React from 'react';
+import { FaBars } from 'react-icons/fa';
+
+const Dnavbar = ({ onToggleSidebar }) => {
+    return (
+        <nav className="bg-blue p-4">
+            {/* hiidden with md:display */}
+            <div className="md:hidden">
+                {/* iculde FaBars */}
+                <button onClick={onToggleSidebar}>
+                    <FaBars className="text-white" />
+                </button>
+            </div>
+
+            <h1 className="text-right text-white hidden md:block">Navbar</h1>
+
+        </nav>
+    );
+};
+
+export default Dnavbar;
+~~~
+
 Main NavBar V.1
 
 ~~~JavaScript

@@ -64,15 +64,17 @@ export default function RootLayout({
 ![layout1](img/layout1.png)
 
 ```JavaScript
+import React from 'react';
+
 const Layout1 = () => {
 
     return (
         <div className="bg-gray-800 min-h-screen">
-            <div className="flex h-screen">
+            <div className="flex flex-col md:flex-row h-screen">
 
-                <div className="bg-gray-dark w-64">
+                <div className="bg-gray-dark p-4 md:w-64">
                     {/* Sidebar */}
-                    <h1 className="text-white p-4 ">Sidebar</h1>
+                    <h1 className="text-white py-2">Sidebar</h1>
                     <ul>
                         <li className="text-center text-gray py-4">Menu Item 1</li>
                         <li className="text-center text-gray py-4">Menu Item 2</li>
@@ -83,7 +85,7 @@ const Layout1 = () => {
 
                     <nav className="bg-blue p-4">
                         {/* Navbar */}
-                        <h1 className='text-right'>Navbar</h1>
+                        <h1 className='text-right text-white'>Navbar</h1>
                     </nav>
 
                     <main className="p-4">
@@ -100,4 +102,55 @@ const Layout1 = () => {
 }
 
 export default Layout1
+```
+
+![layout1R](img/layout1R.png)
+
+## Page Example Layout 1 Upgrade
+
+Layout แบบแยก Components
+
+```JavaScript
+import React, { useState } from 'react';
+import Dsidebar from '../components/DsideBar';
+import Dnavbar from '../components/DnavBar';
+
+const Test = () => {
+
+    const [isDsidebarOpen, setIsDsidebarOpen] = useState(false);
+    {/* กำหนดค่า Menu */}
+    const menuItems = [
+        { id: 1, label: 'Menu Item 1' },
+        { id: 2, label: 'Menu Item 2' },
+    ];
+
+    {/* กำหนดค่า icon hamberger menu เมื่อซ่อน Dnavbar */} 
+    const toggleSidebar = () => {
+        setIsDsidebarOpen(!isDsidebarOpen);
+    };
+
+    return (
+        <div className="bg-gray-800 min-h-screen">
+            <div className="flex flex-col md:flex-row h-screen">
+
+                <Dsidebar menuItems={menuItems} isDsidebarOpen={isDsidebarOpen} />
+
+                <div className="flex-1">
+
+                    <Dnavbar onToggleSidebar={toggleSidebar} />
+
+                    <main className="p-4">
+                        {/* Content */}
+                        <p>Content</p>
+                    </main>
+
+                </div>
+
+            </div>
+
+        </div>
+    );
+}
+
+export default Test;
 ```
