@@ -114,6 +114,7 @@ Layout แบบแยก Components
 import React, { useState } from 'react';
 import Dsidebar from '../components/DsideBar';
 import Dnavbar from '../components/DnavBar';
+import Dcontent from '../components/Dcontents';
 
 const Test = () => {
 
@@ -139,10 +140,7 @@ const Test = () => {
 
                     <Dnavbar onToggleSidebar={toggleSidebar} />
 
-                    <main className="p-4">
-                        {/* Content */}
-                        <p>Content</p>
-                    </main>
+                    <Dcontent />
 
                 </div>
 
@@ -154,3 +152,5 @@ const Test = () => {
 
 export default Test;
 ```
+
+![Layout2R](img/layout2R.png)

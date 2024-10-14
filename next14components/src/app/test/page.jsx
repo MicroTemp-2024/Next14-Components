@@ -1,35 +1,28 @@
 "use client"
 
 import React, { useState } from 'react';
-import Dsidebar from '../components/DsideBar';
-import Dnavbar from '../components/DnavBar';
+import TContent from '../components/TContents';
+import Navbar from '../components/TnavBar';
+import Sidebar from '../components/TsideBar';
 
-const Test = () => {
+function page() {
 
-    const [isDsidebarOpen, setIsDsidebarOpen] = useState(false);
     const menuItems = [
         { id: 1, label: 'Menu Item 1' },
         { id: 2, label: 'Menu Item 2' },
     ];
 
-    const toggleSidebar = () => {
-        setIsDsidebarOpen(!isDsidebarOpen);
-    };
-
     return (
         <div className="bg-gray-800 min-h-screen">
             <div className="flex flex-col md:flex-row h-screen">
-
-                <Dsidebar menuItems={menuItems} isDsidebarOpen={isDsidebarOpen} />
+                {/* ส่ง menuItems เป็น props */}
+                <Sidebar menuItems={menuItems} />
 
                 <div className="flex-1">
+                    {/* ส่ง menuItems เป็น props */}
+                    <Navbar menuItems={menuItems} />
 
-                    <Dnavbar onToggleSidebar={toggleSidebar} />
-
-                    <main className="p-4">
-                        {/* Content */}
-                        <p>Content</p>
-                    </main>
+                    <TContent />
 
                 </div>
 
@@ -39,16 +32,8 @@ const Test = () => {
     );
 }
 
-export default Test;
+export default page;
 
-
-{/* 
-<div className="bg-gray-dark p-4 md:w-64">
-// Sidebar 
-<h1 className="text-white py-2">Sidebar</h1>
-<ul>
-    <li className="text-center text-gray py-4">Menu Item 1</li>
-    <li className="text-center text-gray py-4">Menu Item 2</li>
-</ul>
-</div>
- */}
+{/*
+menuItems={menuItems} isDsidebarOpen={isDsidebarOpen}
+*/}

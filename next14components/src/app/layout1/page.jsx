@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Layout1 = () => {
+const page = () => {
 
     return (
-        <div className="bg-gray-800 min-h-screen">
+        <div className="min-h-screen">
             <div className="flex flex-col md:flex-row h-screen">
 
                 <div className="bg-gray-dark p-4 md:w-64">
@@ -35,4 +35,4 @@ const Layout1 = () => {
     );
 }
 
-export default Layout1
+export default page

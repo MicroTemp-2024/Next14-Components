@@ -1,3 +1,4 @@
+// @Layout2
 import React from 'react';
 
 const Dsidebar = ({ menuItems }) => {
