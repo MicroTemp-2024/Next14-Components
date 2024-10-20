@@ -1,15 +1,29 @@
 // @Test
 import React from 'react';
+import { SideBarlinkItems } from './LinkMenu';
+import Link from 'next/link';
 
-const Sidebar = ({ menuItems, isSidebarOpen  }) => {
+const Sidebar = () => {
     return (
-        <div className="bg-gray-dark hidden md:block h-screen">
-            <h1 className="text-white py-4 px-6 shadow-md">Sidebar</h1>
-            <ul className="text-center text-gray">
-                <li className="py-4">Menu Item 1</li>
-                <li className="py-4">Menu Item 2</li>
-                <li className="py-4">Menu Item 3</li>
-            </ul>
+        <div className='sidebar'>
+            <div className="bg-gray-dark hidden md:block h-screen">
+                <div className="user-panel text-white h-[60px] py-4 px-6 mb-2 shadow-md">
+                    <h1>Sidebar</h1>
+                </div>
+                <div className='sidebar-menu mt-2'>
+                    <ul className="text-center text-gray">
+
+                        {SideBarlinkItems.map(item => (
+                            <li className="py-4" key={item.id}>
+                                <Link href={item.link}>
+                                    {item.label}
+                                </Link>
+                            </li>
+                        ))}
+
+                    </ul>
+                </div>
+            </div>
         </div>
     );
 };

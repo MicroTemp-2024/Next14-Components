@@ -1,7 +1,7 @@
 // @Main Page
 import React from 'react'
 import Link from 'next/link';
-import linkMenuItems from './LinkMenu';
+import { linkMenuItems } from './LinkMenu';
 
 const SideBar = () => {
     return (

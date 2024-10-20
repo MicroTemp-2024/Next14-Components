@@ -1,7 +1,7 @@
 // @Main Page
 import React, { useState } from 'react';
 import Link from 'next/link';
-import linkMenuItems from './LinkMenu';
+import { linkMenuItems } from './LinkMenu';
 import { FaBars } from 'react-icons/fa';
 
 const NavBar = () => {
@@ -18,6 +18,7 @@ const NavBar = () => {
 
             {/* hiidden with md:display */}
             <div className="text-left p-5 md:hidden">
+                
                 {/* iculde FaBars */}
                 <button onClick={toggleMenu}>
                     <FaBars />

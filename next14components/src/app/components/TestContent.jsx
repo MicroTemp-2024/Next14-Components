@@ -1,11 +1,12 @@
 // => @Container => Test
 
+import Color from "./Color";
+
 const Contents = () => {
     return (
-        <main>
-
-
-        </main>
+        <dev>
+            <Color />
+        </dev>
     );
 };
 

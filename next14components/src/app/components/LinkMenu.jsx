@@ -1,6 +1,4 @@
-import React from 'react';
-
-const linkMenuItems = [
+export const linkMenuItems = [
   { 
     id: 1, 
     label: 'หน้าหลัก', 
@@ -16,5 +14,18 @@ const linkMenuItems = [
   // ... เพิ่มเมนูอื่นๆ ได้ตามต้องการ
 ];
 
-export default linkMenuItems;
-
+export const SideBarlinkItems = [
+  { 
+    id: 1, 
+    label: 'item 1', 
+    link: '/#' },
+  { 
+    id: 2, 
+    label: 'item 2', 
+    link: '/#' },
+  { 
+    id: 3, 
+    label: 'Colors', 
+    link: '/Color' },
+  // ... เพิ่มเมนูอื่นๆ ได้ตามต้องการ
+];

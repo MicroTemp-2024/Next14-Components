@@ -1,5 +1,7 @@
 # layout
 
+![layout](img/layout.png)
+
 - อ่านข้อมูล [Tailwind Grid](https://tailwindcss.com/docs/grid-template-columns)
 
 Code ดั้งเดิม
@@ -39,6 +41,7 @@ export default function RootLayout({
     );
 }
 ```
+
 ## Grid Example
 
 ![grid-simple.png](img/grid-simple.png)
